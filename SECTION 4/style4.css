@@ -1,0 +1,177 @@
+body {
+  font-family: "Instrument Serif", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #162351;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  background: #F2E7D3;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  font-weight: normal; 
+}
+
+.home-button-container {
+  position: absolute;
+  top: 20px; 
+  left: 20px; 
+  z-index: 1000; 
+}
+
+#name, #daysWorked,
+#dailyRate, #deduction {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.294) 0px 4px 8px, rgba(0, 0, 0, 0.24) 0px 3px 6px;
+  font-weight: normal;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(242, 231, 211);
+  border-image: initial;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+h2 {
+  color: #162351;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #ccc;
+  font-family: "Luxurious Script", cursive;
+  font-size: 60px;
+  font-weight: normal;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  justify-self: end;
+  align-self: center;
+}
+
+input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #96AEC4;
+  box-shadow: 0 0 5px #96AEC4;
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  background-color: #96AEC4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+  transition: all 0.3s ease;
+  font-family: "Luxurious Script", cursive; /* Added font-family for the button */
+}
+
+.add-btn:hover {
+  background-color: #162351;
+  transform: scale(1.05);
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #997D5C;
+  color: white;
+  font-weight: bold;
+  font-weight: normal;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+td button {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Instrument Serif", serif;
+}
+
+td button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 200px) {
+  .input-container {
+    grid-template-columns: 1fr;
+  }
+
+  label {
+    justify-self: start;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  .add-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  th, td {
+    font-size: 14px;
+  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Luxurious+Script&display=swap" rel="stylesheet">
+  <title>Conversion</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="container">
+      <form id="calcCFFC" onsubmit="calculateTemp(); return false;">
+        <div id="title">
+          <h1>Temperature</h1>
+          <h2>Converter</h2>
+        </div>
+        <div id="wrapper">
+          <input type="text" id="inputTemp" placeholder="Enter a value" aria-describedby="resultTemp">
+          <div id="buttonContainer">
+            <button type="button" id="Cel" onclick="fahToCel()">FAHRENHEIT TO CELSIUS</button>
+            <button type="button" id="Fah" onclick="celToFah()">CELSIUS TO FAHRENHEIT</button>
+          </div>
+          <input type="text" id="outputTemp" readonly placeholder="Result">
+          <span id="resultTemp"></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="container">
+      <form id="calcMFFM" onsubmit="convertUnits(); return false;">
+        <div id="title">
+          <h1>Metric</h1>
+          <h2>Converter</h2>
+        </div>
+        <div id="wrapper">
+          <input type="text" id="inputMetric" placeholder="Enter a value" aria-describedby="resultMetric">
+          <div id="buttonContainer">
+            <button type="button" id="meter" onclick="convertToMeter()">FEET TO METERS</button>
+            <button type="button" id="feet" onclick="convertToFeet()">METERS TO FEET</button>
+          </div>
+          <input type="text" id="outputMetric" readonly placeholder="Result">
+          <span id="resultMetric"></span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="home-button-container">
+    <a href="../index.html">
+      <button style="font-family: 'Instrument Serif', serif;">Return</button>
+    </a>
+  </div>  
+
+  <script src="script1.js"></script> 
+</body>
+</html>

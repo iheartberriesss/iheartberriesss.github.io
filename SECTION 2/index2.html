@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income Tax Calculator</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Luxurious+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="calcontainer">
+    <h2 class="tax_heading">Income Tax Calculator</h2>
+    <table class="tax_table">
+      <thead>
+        <tr>
+          <th colspan="2">Amount of Net Taxable Income</th>
+          <th>Basic Tax + Rate</th>
+        </tr>
+        <tr>
+          <th>Over</th>
+          <th>But Not Over</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>-</td><td>P250,000</td><td>0%</td></tr>
+        <tr><td>P250,000</td><td>P400,000</td><td>20% of the excess over P250,000</td></tr>
+        <tr><td>P400,000</td><td>P800,000</td><td>P30,000 + 25% of the excess over P400,000</td></tr>
+        <tr><td>P800,000</td><td>P2,000,000</td><td>P130,000 + 30% of the excess over P800,000</td></tr>
+        <tr><td>P2,000,000</td><td>P8,000,000</td><td>P490,000 + 32% of the excess over P2,000,000</td></tr>
+        <tr><td>P8,000,000</td><td>-</td><td>P2,410,000 + 35% of the excess over P8,000,000</td></tr>
+      </tbody>
+    </table>
+
+    <form class="value_form" id="tax">
+      <div class="form_input">
+        <label>Enter your annual income:</label>
+        <input type="number" id="form_input" placeholder="Enter a value" required>
+      </div>
+      <div class="form_button">
+        <button type="submit">Calculate My Tax</button>
+      </div>
+    </form>
+
+    <div>
+      <p id="tax_result" class="tax_result"></p>
+    </div>
+  </div>
+
+  <div class="home-button-container">
+    <a href="../index.html">
+      <button style="font-family: 'Instrument Serif', serif;">Return</button>
+    </a>
+  </div>  
+
+  <script src="script2.js"></script>
+</body>
+</html>

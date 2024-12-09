@@ -1,0 +1,197 @@
+body {
+  background-color: #162351;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+  font-family: "Instrument Serif", serif;
+  font-weight: normal;
+}
+
+.calcontainer {
+  width: 35%;
+  background-color: #F2E7D3;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  font-weight: normal;
+  max-width: 100%;
+}
+
+.home-button-container {
+  position: absolute;
+  top: 20px; 
+  left: 20px; 
+  z-index: 1000; 
+}
+
+.tax_heading {
+  color: #162351;
+  font-family: "Luxurious Script", cursive;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.tax_table {
+  width: 100%;
+  text-align: left;
+  color: #162351;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.tax_table td, .tax_table th {
+  border: 1px solid rgb(102, 68, 17);
+  padding: 8px;
+}
+
+.value_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_input {
+  margin: 5px 0;
+}
+
+.form_input input {
+  width: 160px;
+  height: 35px;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 5px;
+  font-family: "Instrument Serif", serif;
+  background-color: #fff;
+}
+
+.form_button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Instrument Serif", serif;
+  background-color: #96AEC4;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.form_button button:hover {
+  background-color: #3A5770;
+  color: #F2E7D3;
+}
+
+.tax_result {
+  color: #162351;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .calcontainer {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .tax_heading {
+    font-size: 45px;
+  }
+
+  .form_input input {
+    width: 150px;
+    height: 30px;
+    font-size: 17px;
+  }
+
+  .form_button button {
+    padding: 9px 18px;
+    font-size: 15px;
+  }
+
+  .tax_result {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .calcontainer {
+    width: 70%;
+    padding: 15px;
+  }
+
+  .tax_heading {
+    font-size: 40px;
+  }
+
+  .form_input input {
+    width: 130px;
+    height: 24px;
+    font-size: 16px;
+  }
+
+  .form_button button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .tax_result {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .calcontainer {
+    width: 85%;
+    padding: 12px;
+  }
+
+  .tax_heading {
+    font-size: 35px;
+  }
+
+  .form_input input {
+    width: 120px;
+    height: 22px;
+    font-size: 15px;
+  }
+
+  .form_button button {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+
+  .tax_result {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .calcontainer {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .tax_heading {
+    font-size: 30px;
+  }
+
+  .form_input input {
+    width: 100px;
+    height: 18px;
+    font-size: 13px;
+  }
+
+  .form_button button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .tax_result {
+    font-size: 14px;
+  }
+}
